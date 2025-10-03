@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ de Vendas - Atlas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="chat-container">
+    <header class="header">
+      <img id="logo" src="https://placehold.co/64x64/00897b/ffffff?text=A" alt="Logo da Atlas" class="logo" />
+      <div class="header-text">
+        <h1 id="header-title">Roteiro de Atendimento</h1>
+        <p id="header-subtitle">Copie e cole as mensagens de forma rápida e prática.</p>
+      </div>
+    </header>
+
+    <section class="controls">
+      <div class="control-group">
+        <label for="modeSelect" class="sr-only">Selecione a categoria</label>
+        <select id="modeSelect" class="select"></select>
+      </div>
+      <div class="control-group control-grow">
+        <label for="searchInput" class="sr-only">Buscar</label>
+        <input id="searchInput" type="search" placeholder="Buscar..." class="input" />
+      </div>
+      <div class="control-group">
+        <label class="switch" title="Tema escuro">
+          <input type="checkbox" id="themeToggle" />
+          <span class="slider"></span>
+        </label>
+      </div>
+    </section>
+
+    <section id="status" class="status" aria-live="polite"></section>
+
+    <main id="cards" class="cards" aria-live="polite"></main>
+
+    <section class="note">
+      <p><strong>Dica de Ouro:</strong> Personalize os campos como [Nome do cliente] quando necessário para aproximar a conversa.</p>
+    </section>
+    <div id="versionLabel" class="version-label" aria-label="Versão"></div>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/whatsapp.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
